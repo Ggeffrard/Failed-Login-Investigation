@@ -50,5 +50,25 @@ WHERE login_date = '2022-05-09' OR login_date = '2022-05-08';
 
 There are 75 login attempts in these two days.
 
+# Retrieve login attempts outside of Mexico
+
+I analyzed authentication records to identify login attempts that originated outside of Mexico. Using SQL’s NOT and LIKE operators, I filtered out records associated with locations matching the pattern “MEX%”, allowing me to focus on login activity from other countries. This helped identify potentially unusual access attempts originating from outside the expected geographic region.
+
+The command to complete this step:
+
+SELECT * 
+
+FROM log_in_attempts 
+
+WHERE NOT country LIKE 'MEX%';
+
+<img width="611" height="125" alt="Screenshot 2026-06-08 100056" src="https://github.com/user-attachments/assets/07e0a82a-81df-4e83-bc6d-817ff8264312" />
+<img width="992" height="868" alt="Screenshot 2026-06-08 100128" src="https://github.com/user-attachments/assets/92e55ac7-fa14-49b9-8b14-ddb1be9063ad" />
+<img width="1005" height="952" alt="Screenshot 2026-06-08 100314" src="https://github.com/user-attachments/assets/0fbae8ce-719e-4311-a881-18a570f74dd0" />
+<img width="1041" height="958" alt="Screenshot 2026-06-08 100340" src="https://github.com/user-attachments/assets/7c56d60d-3c23-4a9e-a839-5efa4674b014" />
+<img width="1132" height="788" alt="Screenshot 2026-06-08 100403" src="https://github.com/user-attachments/assets/7cddcb6f-16a2-46aa-8380-dff0be5a07ed" />
+
+There are 144 login attempts made outside of Mexico.
+
 
 
