@@ -70,5 +70,29 @@ WHERE NOT country LIKE 'MEX%';
 
 There are 144 login attempts made outside of Mexico.
 
+## Findings
+
+During the investigation, multiple failed login attempts were identified within the authentication logs. SQL queries were used to filter records, review login activity, and analyze user behavior. The investigation revealed patterns of unsuccessful authentication attempts that could indicate incorrect credentials, unauthorized access attempts, or potential brute-force activity. The analysis demonstrated how SQL can be used to efficiently investigate security events and support incident response efforts.
+
+## Skills Demonstrated
+
+- SQL Querying
+- Log Analysis
+- Authentication Monitoring
+- Security Investigation
+- Data Filtering
+- Threat Detection
+- Incident Analysis
+- Security Operations
+- Cybersecurity Fundamentals
+
+## Conclusion
+This project strengthened my ability to use SQL for cybersecurity investigations by analyzing authentication logs and identifying failed login attempts. Through data filtering and query analysis, I gained practical experience investigating security-related events and interpreting authentication activity. These skills are essential for cybersecurity analysts responsible for monitoring systems, detecting suspicious behavior, and supporting incident response efforts.
+
+
+
+
+
+
 
 
